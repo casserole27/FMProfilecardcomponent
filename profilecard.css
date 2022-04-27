@@ -7,6 +7,8 @@ clewisdev.com
 April 2022
 */
 
+/****** VARIABLES ******/
+
 :root {
     --dark-cyan: hsl(185, 75%, 39%);
     --very-dark-desaturated-blue: hsl(229, 23%, 23%);
@@ -14,8 +16,23 @@ April 2022
     --dark-gray: hsl(0, 0%, 59%);
 }
 
+/******* GLOBAL STYLING ******/
+
 body {
+    background: url(images/bg-pattern-top.svg), teal /*url(images/bg-pattern-bottom.svg)*/;
     font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    
+}
+
+.age, .location, .followtext, .likestext, .photostext {
+    color: var(--dark-gray);
 }
 
 
