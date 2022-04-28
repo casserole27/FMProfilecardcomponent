@@ -26,15 +26,103 @@ body {
     align-items: center;
 }
 
-.card {
-    background-color: white;
-    
+h1, .age {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.location {
+    font-size: .9em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+}
+
+.follownumber, .likesnumber, .photosnumber {
+    font-size: 1.1em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.followtext, .likestext, .photostext {
+    font-size: .75em;
+    text-align: center;
+    margin-top: 0;
 }
 
 .age, .location, .followtext, .likestext, .photostext {
     color: var(--dark-gray);
 }
 
+hr {
+    color: rgba(211, 211, 211, 0.226);
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+/****** FLEXBOX ******/
+
+.img-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 1rem;
+}
+
+.followers, .likes, .photos {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+/****** CARD STYLING ******/
+
+.wrapper {
+    width: 1080px;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    
+}
+
+
+/****** IMG STYLING ******/
+
+.profilephoto {
+    border: .5rem solid white;
+    border-radius: 50%;
+    margin-top: -3rem;
+}
+
+.cardpattern {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
 
 /*# Front-end Style Guide
 
