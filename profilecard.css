@@ -14,13 +14,18 @@ April 2022
     --very-dark-desaturated-blue: hsl(229, 23%, 23%);
     --dark-grayish-blue: hsl(227, 10%, 46%);
     --dark-gray: hsl(0, 0%, 59%);
+    --background: #19a1ad;
 }
 
 /******* GLOBAL STYLING ******/
 
 body {
-    background: url(images/bg-pattern-top.svg), teal /*url(images/bg-pattern-bottom.svg)*/;
+    background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-color: var(--background);
+    background-repeat: no-repeat;
+    background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw), left calc(40vw + 25%) top calc(72vh - 10vw);
     font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,20 +33,17 @@ body {
 
 h1, .age {
     font-size: 1.1em;
-    font-weight: 700;
     margin-bottom: .5rem;
 }
 
 .location {
     font-size: .9em;
-    font-weight: 700;
     text-align: center;
     margin-top: 0;
 }
 
 .follownumber, .likesnumber, .photosnumber {
     font-size: 1.1em;
-    font-weight: 700;
     text-align: center;
     margin-bottom: .5rem;
 }
@@ -89,7 +91,6 @@ hr {
 .followers, .likes, .photos {
     display: flex;
     flex-direction: column;
-    
 }
 
 
@@ -97,7 +98,7 @@ hr {
 
 .wrapper {
     width: 1080px;
-    padding: 5rem;
+    padding: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +108,7 @@ hr {
 .card {
     background-color: white;
     border-radius: 1rem;
-    
+    box-shadow: .1rem 1rem 5rem 1rem rgba(78, 77, 77, 0.5);
 }
 
 
@@ -123,6 +124,8 @@ hr {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
+
+
 
 /*# Front-end Style Guide
 
